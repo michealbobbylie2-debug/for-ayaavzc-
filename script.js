@@ -232,3 +232,50 @@ letterButton.addEventListener("click", function () {
     });
   }, 700);
 });
+
+/* =========================
+NAME SCREEN
+========================= */
+
+const nameScreen = document.getElementById("nameScreen");
+const nameInput = document.getElementById("nameInput");
+const nameButton = document.getElementById("nameButton");
+const nameError = document.getElementById("nameError");
+
+nameButton.addEventListener("click", enterName);
+
+nameInput.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    enterName();
+  }
+});
+
+function enterName() {
+  const name = nameInput.value.trim();
+
+  if (name === "") {
+    nameError.innerHTML = "Hmm... namanya belum diisi 😭💗";
+
+    nameInput.focus();
+
+    return;
+  }
+
+  nameButton.innerHTML = "Welcome... 💗";
+  nameButton.disabled = true;
+
+  nameError.innerHTML = "";
+
+  setTimeout(function () {
+    nameScreen.classList.add("hide");
+
+    // Kalau nama yang dimasukkan adalah Ayaavzc,
+    // tampilkan nama tersebut di halaman berikutnya.
+
+    const birthdayTitle = document.querySelector("#birthday h1");
+
+    if (birthdayTitle && name) {
+      birthdayTitle.innerHTML = `Happy Birthday ${name} 🎂`;
+    }
+  }, 800);
+}
