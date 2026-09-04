@@ -1,0 +1,1806 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fff0f6;
+  color: #5a3045;
+  overflow-x: hidden;
+}
+
+/* =========================
+   OPENING
+========================= */
+
+.opening {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(circle at top left, #ffd6e8, transparent 35%),
+    radial-gradient(circle at bottom right, #ffc1dc, transparent 35%), #fff0f6;
+}
+
+.opening-content {
+  position: relative;
+  z-index: 2;
+
+  padding: 30px;
+
+  animation: fadeUp 1.5s ease;
+}
+
+.small-text {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #b66b8b;
+
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+
+  font-size: clamp(55px, 12vw, 100px);
+
+  line-height: 0.95;
+
+  color: #7a3d59;
+
+  margin-bottom: 25px;
+}
+
+h1 span {
+  color: #d65b87;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 1.8;
+
+  color: #81566a;
+
+  margin-bottom: 35px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+  border: none;
+
+  padding: 15px 28px;
+
+  border-radius: 50px;
+
+  background: #d65b87;
+  color: white;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+
+  cursor: pointer;
+
+  box-shadow: 0 10px 25px rgba(214, 91, 135, 0.25);
+
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 15px 30px rgba(214, 91, 135, 0.35);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.hearts span {
+  position: absolute;
+
+  bottom: -50px;
+
+  color: #e88eae;
+
+  font-size: 25px;
+
+  opacity: 0.6;
+
+  animation: floatHeart linear infinite;
+}
+
+.hearts span:nth-child(1) {
+  left: 10%;
+  animation-duration: 8s;
+}
+
+.hearts span:nth-child(2) {
+  left: 25%;
+  animation-duration: 11s;
+  animation-delay: 2s;
+}
+
+.hearts span:nth-child(3) {
+  left: 40%;
+  animation-duration: 9s;
+  animation-delay: 1s;
+}
+
+.hearts span:nth-child(4) {
+  left: 55%;
+  animation-duration: 12s;
+  animation-delay: 3s;
+}
+
+.hearts span:nth-child(5) {
+  left: 70%;
+  animation-duration: 10s;
+  animation-delay: 1s;
+}
+
+.hearts span:nth-child(6) {
+  left: 82%;
+  animation-duration: 13s;
+  animation-delay: 4s;
+}
+
+.hearts span:nth-child(7) {
+  left: 92%;
+  animation-duration: 9s;
+  animation-delay: 2s;
+}
+
+/* =========================
+   BIRTHDAY SECTION
+========================= */
+
+.birthday {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 30px;
+
+  background: #ffe4ef;
+}
+
+.birthday-content {
+  max-width: 700px;
+}
+
+.birthday h2 {
+  font-family: "Dancing Script", cursive;
+
+  font-size: clamp(45px, 10vw, 80px);
+
+  line-height: 1;
+
+  color: #7a3d59;
+
+  margin-bottom: 25px;
+}
+
+.birthday h2 span {
+  color: #d65b87;
+}
+
+.birthday p {
+  line-height: 1.8;
+  color: #81566a;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatHeart {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.6;
+  }
+
+  80% {
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: translateY(-110vh) rotate(30deg);
+    opacity: 0;
+  }
+}
+
+/* =========================
+   BIRTHDAY CAKE
+========================= */
+
+.cake-wrapper {
+    margin-bottom: 35px;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+.cake {
+    position: relative;
+
+    width: 190px;
+    height: 150px;
+
+    animation: cakeFloat 3s ease-in-out infinite;
+}
+
+
+/* Cake body */
+
+.cake-body {
+    position: absolute;
+
+    bottom: 15px;
+    left: 20px;
+
+    width: 150px;
+    height: 80px;
+
+    background: linear-gradient(
+        to bottom,
+        #ff9fc3,
+        #f47fae
+    );
+
+    border-radius: 12px 12px 20px 20px;
+
+    box-shadow:
+        0 12px 25px rgba(214, 91, 135, 0.25);
+}
+
+
+/* Cake cream */
+
+.cake-top {
+    position: absolute;
+
+    bottom: 80px;
+    left: 15px;
+
+    width: 160px;
+    height: 30px;
+
+    background: #fff7fa;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 5px 10px rgba(214, 91, 135, 0.12);
+}
+
+
+/* Cream dripping */
+
+.cake-top::after {
+    content: "";
+
+    position: absolute;
+
+    left: 25px;
+    top: 10px;
+
+    width: 25px;
+    height: 25px;
+
+    background: #fff7fa;
+
+    border-radius: 0 0 15px 15px;
+}
+
+
+/* Cake hearts */
+
+.cake-body span {
+    position: relative;
+
+    display: inline-block;
+
+    margin: 28px 10px 0;
+
+    color: #fff;
+
+    font-size: 18px;
+
+    opacity: 0.9;
+}
+
+
+/* Plate */
+
+.cake-plate {
+    position: absolute;
+
+    bottom: 0;
+    left: 5px;
+
+    width: 180px;
+    height: 15px;
+
+    background: #f9c5d9;
+
+    border-radius: 50%;
+}
+
+
+/* Candle */
+
+.candle {
+    position: absolute;
+
+    z-index: 5;
+
+    bottom: 108px;
+    left: 85px;
+
+    width: 20px;
+    height: 55px;
+
+    background:
+        repeating-linear-gradient(
+            45deg,
+            #fff,
+            #fff 7px,
+            #ff8fb8 7px,
+            #ff8fb8 14px
+        );
+
+    border-radius: 5px;
+}
+
+
+/* Flame */
+
+.flame {
+    position: absolute;
+
+    left: 3px;
+    top: -28px;
+
+    width: 15px;
+    height: 25px;
+
+    background: #ffb347;
+
+    border-radius: 50% 50% 50% 50%;
+
+    transform: rotate(45deg);
+
+    box-shadow:
+        0 0 15px #ffb347,
+        0 0 30px rgba(255, 179, 71, 0.5);
+
+    animation: flame 0.8s ease-in-out infinite alternate;
+}
+
+
+/* Wish message */
+
+.wish-message {
+    max-width: 450px;
+
+    margin: 25px auto 0;
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 22px;
+
+    color: #c0527c;
+
+    opacity: 0;
+
+    transform: translateY(15px);
+
+    transition: 0.8s ease;
+}
+
+
+.wish-message.show {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================
+   CAKE ANIMATIONS
+========================= */
+
+@keyframes cakeFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+}
+
+
+@keyframes flame {
+
+    from {
+        transform: rotate(42deg) scale(1);
+    }
+
+    to {
+        transform: rotate(48deg) scale(1.08);
+    }
+
+}
+
+/* =========================
+   OPENING TRANSITION
+========================= */
+
+.opening {
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+
+.opening-hide {
+    opacity: 0;
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   BIRTHDAY ENTRANCE
+========================= */
+
+.birthday {
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    transition:
+        opacity 1s ease,
+        transform 1s ease;
+}
+
+
+.birthday.birthday-show {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+/* =========================
+   OUR STORY
+========================= */
+
+.story {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 25px;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            #ffd6e7,
+            transparent 35%
+        ),
+        #fff5f8;
+}
+
+
+.story-container {
+    width: 100%;
+    max-width: 700px;
+}
+
+
+.story h2 {
+    font-family: 'Dancing Script', cursive;
+
+    font-size: clamp(50px, 10vw, 80px);
+
+    line-height: 1;
+
+    color: #7a3d59;
+
+    margin-bottom: 35px;
+}
+
+
+.story h2 span {
+    color: #d65b87;
+}
+
+
+.story-card {
+    position: relative;
+
+    padding: 45px 35px;
+
+    background: rgba(255, 255, 255, 0.75);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 20px 50px rgba(180, 80, 120, 0.12);
+
+    border: 1px solid rgba(255, 255, 255, 0.8);
+
+    backdrop-filter: blur(10px);
+
+    margin-bottom: 35px;
+}
+
+
+.story-card p {
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    color: #795467;
+
+    margin-bottom: 22px;
+}
+
+
+.story-card .story-last {
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 25px;
+
+    color: #c0527c;
+
+    margin-bottom: 0;
+}
+
+
+.story-icon {
+    width: 55px;
+    height: 55px;
+
+    margin: -70px auto 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #f48fb5;
+
+    color: white;
+
+    font-size: 25px;
+
+    box-shadow:
+        0 10px 25px rgba(214, 91, 135, 0.25);
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .story-card {
+        padding: 40px 25px;
+    }
+
+    .story-card p {
+        font-size: 14px;
+    }
+
+}
+
+/* =========================
+   MEMORIES
+========================= */
+
+.memories {
+    min-height: 100vh;
+
+    padding: 100px 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            #ffd6e7,
+            transparent 35%
+        ),
+        #fff0f6;
+}
+
+
+.memories-container {
+    width: 100%;
+    max-width: 1000px;
+}
+
+
+.memories h2 {
+    font-family: 'Dancing Script', cursive;
+
+    font-size: clamp(50px, 10vw, 80px);
+
+    line-height: 1;
+
+    color: #7a3d59;
+
+    margin-bottom: 20px;
+}
+
+
+.memories h2 span {
+    color: #d65b87;
+}
+
+
+.memories-intro {
+    max-width: 550px;
+
+    margin: 0 auto 70px;
+
+    color: #81566a;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   POLAROID GALLERY
+========================= */
+
+.polaroid-gallery {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 35px;
+
+    margin-bottom: 70px;
+}
+
+
+.polaroid {
+    width: 210px;
+
+    padding: 12px 12px 25px;
+
+    background: #fff;
+
+    box-shadow:
+        0 15px 35px rgba(130, 50, 80, 0.15);
+
+    transition: 0.4s ease;
+
+    position: relative;
+}
+
+
+.polaroid:hover {
+    transform:
+        rotate(0deg)
+        translateY(-12px)
+        scale(1.04);
+
+    box-shadow:
+        0 25px 45px rgba(130, 50, 80, 0.2);
+}
+
+
+/* Photo */
+
+.photo {
+    width: 100%;
+
+    height: 210px;
+
+    overflow: hidden;
+
+    background: #ffdce9;
+}
+
+
+.photo img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.5s ease;
+}
+
+
+.polaroid:hover .photo img {
+    transform: scale(1.06);
+}
+
+
+/* Caption */
+
+.polaroid p {
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 19px;
+
+    color: #81566a;
+
+    margin-top: 15px;
+}
+
+
+/* Different rotations */
+
+.polaroid-1 {
+    transform: rotate(-5deg);
+}
+
+.polaroid-2 {
+    transform: rotate(4deg);
+}
+
+.polaroid-3 {
+    transform: rotate(-3deg);
+}
+
+.polaroid-4 {
+    transform: rotate(6deg);
+}
+
+
+/* Tape decoration */
+
+.polaroid::before {
+    content: "";
+
+    position: absolute;
+
+    width: 65px;
+
+    height: 20px;
+
+    background: rgba(255, 190, 215, 0.65);
+
+    top: -10px;
+
+    left: 50%;
+
+    transform: translateX(-50%) rotate(-2deg);
+
+    z-index: 2;
+}
+
+
+/* Bottom */
+
+.memory-bottom {
+    max-width: 500px;
+
+    margin: auto;
+}
+
+
+.memory-bottom p {
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 23px;
+
+    color: #c0527c;
+
+    margin-bottom: 25px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .polaroid-gallery {
+        gap: 45px 20px;
+    }
+
+    .polaroid {
+        width: 165px;
+    }
+
+    .photo {
+        height: 165px;
+    }
+
+    .polaroid p {
+        font-size: 16px;
+    }
+
+}
+
+/* =========================
+   THINGS I LIKE
+========================= */
+
+.things {
+    min-height: 100vh;
+
+    padding: 100px 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 10% 80%,
+            #ffd4e5,
+            transparent 35%
+        ),
+        #fff7fa;
+}
+
+
+.things-container {
+    width: 100%;
+    max-width: 950px;
+}
+
+
+.things h2 {
+    font-family: 'Dancing Script', cursive;
+
+    font-size: clamp(50px, 10vw, 80px);
+
+    line-height: 1;
+
+    color: #7a3d59;
+
+    margin-bottom: 20px;
+}
+
+
+.things h2 span {
+    color: #d65b87;
+}
+
+
+.things-intro {
+    max-width: 550px;
+
+    margin: 0 auto 60px;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    color: #81566a;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.things-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-bottom: 55px;
+}
+
+
+.thing-card {
+    padding: 35px 30px;
+
+    background: rgba(255, 255, 255, 0.8);
+
+    border-radius: 25px;
+
+    border: 1px solid rgba(255, 255, 255, 0.9);
+
+    box-shadow:
+        0 15px 40px rgba(150, 60, 100, 0.1);
+
+    transition: 0.4s ease;
+}
+
+
+.thing-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 25px 50px rgba(150, 60, 100, 0.15);
+}
+
+
+.thing-icon {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #ffe1ed;
+
+    font-size: 28px;
+}
+
+
+.thing-card h3 {
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 28px;
+
+    color: #c0527c;
+
+    margin-bottom: 12px;
+}
+
+
+.thing-card p {
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    color: #795467;
+}
+
+
+/* =========================
+   ENDING
+========================= */
+
+.things-ending {
+    margin-bottom: 35px;
+}
+
+
+.things-ending p {
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 25px;
+
+    color: #c0527c;
+
+    margin-bottom: 5px;
+}
+
+
+.things-ending span {
+    font-size: 14px;
+
+    color: #81566a;
+}
+
+
+.things-ending strong {
+    color: #d65b87;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    .things-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .thing-card {
+        padding: 30px 25px;
+    }
+
+}
+
+/* =========================
+   MUSIC SECTION
+========================= */
+
+.music {
+    min-height: 100vh;
+
+    padding: 100px 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 80% 80%,
+            #ffd1e3,
+            transparent 35%
+        ),
+        #fff0f6;
+}
+
+
+.music-container {
+    width: 100%;
+    max-width: 700px;
+}
+
+
+.music h2 {
+    font-family: 'Dancing Script', cursive;
+
+    font-size: clamp(48px, 10vw, 75px);
+
+    line-height: 1;
+
+    color: #7a3d59;
+
+    margin-bottom: 45px;
+}
+
+
+.music h2 span {
+    color: #d65b87;
+}
+
+
+/* =========================
+   MUSIC CARD
+========================= */
+
+.music-card {
+    width: 100%;
+
+    max-width: 500px;
+
+    margin: auto;
+
+    padding: 35px;
+
+    background: rgba(255, 255, 255, 0.82);
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 25px 60px rgba(150, 60, 100, 0.13);
+
+    backdrop-filter: blur(12px);
+}
+
+
+/* Cover */
+
+.music-cover {
+    width: 170px;
+    height: 170px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            #ffb4cf,
+            #e96c99
+        );
+
+    font-size: 65px;
+
+    box-shadow:
+        0 15px 40px rgba(214, 91, 135, 0.25);
+
+    transition: 0.5s ease;
+}
+
+
+/* Saat lagu play */
+
+.music-cover.playing {
+    animation: musicRotate 5s linear infinite;
+
+    box-shadow:
+        0 0 30px rgba(214, 91, 135, 0.4);
+}
+
+
+/* Info */
+
+.music-label {
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+    color: #b66b8b;
+
+    margin-bottom: 7px;
+}
+
+
+.music-info h3 {
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 30px;
+
+    color: #c0527c;
+
+    margin-bottom: 5px;
+}
+
+
+.music-artist {
+    font-size: 13px;
+
+    color: #987080;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   PLAY BUTTON
+========================= */
+
+.music-controls {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 20px;
+}
+
+
+#playButton {
+    width: 60px;
+    height: 60px;
+
+    padding: 0;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* =========================
+   PROGRESS
+========================= */
+
+.progress-area {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.progress-area span {
+    font-size: 11px;
+
+    color: #987080;
+
+    min-width: 30px;
+}
+
+
+#progressBar {
+    flex: 1;
+
+    height: 5px;
+
+    cursor: pointer;
+
+    accent-color: #d65b87;
+}
+
+
+/* Note */
+
+.music-note {
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 22px;
+
+    color: #c0527c;
+
+    margin: 35px auto;
+
+    max-width: 450px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes musicRotate {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .music-card {
+        padding: 25px 20px;
+    }
+
+    .music-cover {
+        width: 145px;
+        height: 145px;
+
+        font-size: 55px;
+    }
+
+}
+
+/* =========================
+   LETTER SECTION
+========================= */
+
+.letter {
+    min-height: 100vh;
+    padding: 120px 20px;
+    background: linear-gradient(
+        180deg,
+        #fff0f6,
+        #ffe4ef
+    );
+    text-align: center;
+}
+
+.letter-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.letter h2 {
+    font-size: 48px;
+    margin: 15px 0;
+    color: #5a2942;
+}
+
+.letter h2 span {
+    display: block;
+    color: #e96b9a;
+}
+
+.letter-intro {
+    color: #8b6475;
+    margin-bottom: 50px;
+}
+
+
+/* =========================
+   ENVELOPE
+========================= */
+
+.envelope-wrapper {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.envelope {
+    position: relative;
+    width: 260px;
+    height: 180px;
+    margin: auto;
+    transition: transform 0.4s ease;
+}
+
+.envelope-wrapper:hover .envelope {
+    transform: translateY(-8px);
+}
+
+
+/* badan amplop */
+
+.envelope-body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #f8a8c4;
+    border-radius: 8px;
+    box-shadow: 0 15px 30px rgba(150, 70, 100, 0.15);
+    overflow: hidden;
+}
+
+.envelope-body::before,
+.envelope-body::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.envelope-body::before {
+    left: 0;
+    border-width: 90px 130px 0 0;
+    border-color: #ef8fb2 transparent transparent transparent;
+}
+
+.envelope-body::after {
+    right: 0;
+    border-width: 0 130px 90px 0;
+    border-color: transparent #ef8fb2 transparent transparent;
+}
+
+.envelope-body span {
+    position: absolute;
+    z-index: 3;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 32px;
+}
+
+
+/* tutup amplop */
+
+.envelope-flap {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+
+    width: 0;
+    height: 0;
+
+    border-left: 130px solid transparent;
+    border-right: 130px solid transparent;
+    border-top: 95px solid #f7b1ca;
+
+    transform-origin: top;
+    transition: transform 0.8s ease;
+}
+
+
+/* teks */
+
+.envelope-text {
+    margin-top: 25px;
+    color: #d45b89;
+    font-weight: 500;
+}
+
+
+/* =========================
+   OPEN ANIMATION
+========================= */
+
+.envelope-wrapper.open .envelope-flap {
+    transform: rotateX(180deg);
+}
+
+.envelope-wrapper.open {
+    pointer-events: none;
+}
+
+
+/* =========================
+   LETTER PAPER
+========================= */
+
+.letter-paper {
+    display: none;
+
+    max-width: 650px;
+    margin: 60px auto 0;
+    padding: 50px 45px;
+
+    background: #fffafc;
+    border-radius: 10px;
+
+    box-shadow:
+        0 20px 50px rgba(120, 50, 80, 0.12);
+
+    text-align: left;
+
+    opacity: 0;
+    transform: translateY(30px);
+
+    transition:
+        opacity 1s ease,
+        transform 1s ease;
+}
+
+.letter-paper.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.letter-heart {
+    text-align: center;
+    font-size: 35px;
+    color: #e96b9a;
+    margin-bottom: 25px;
+}
+
+.letter-paper p {
+    color: #654454;
+    line-height: 1.9;
+    margin-bottom: 22px;
+}
+
+.letter-greeting {
+    font-family: "Dancing Script", cursive;
+    font-size: 28px;
+    color: #d85b8b !important;
+}
+
+.letter-special {
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 26px;
+    color: #d85b8b !important;
+}
+
+.letter-ending {
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    color: #d85b8b !important;
+    margin-top: 35px;
+}
+
+
+/* =========================
+   FINAL BUTTON
+========================= */
+
+#finalButton {
+    display: block;
+    margin: 35px auto 0;
+
+    padding: 13px 25px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: #e96b9a;
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+#finalButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(220, 90, 140, 0.25);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .letter {
+        padding: 90px 18px;
+    }
+
+    .letter h2 {
+        font-size: 38px;
+    }
+
+    .envelope {
+        width: 230px;
+        height: 160px;
+    }
+
+    .envelope-flap {
+        border-left-width: 115px;
+        border-right-width: 115px;
+        border-top-width: 85px;
+    }
+
+    .letter-paper {
+        padding: 35px 25px;
+    }
+
+    .letter-paper p {
+        font-size: 14px;
+    }
+
+}
+
+/* =========================
+   FINAL SURPRISE
+========================= */
+
+.final-surprise {
+    min-height: 100vh;
+    padding: 120px 20px;
+    background: #fff8fb;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.final-container {
+    max-width: 700px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.final-small {
+    color: #c56b8e;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.final-surprise h2 {
+    font-size: 44px;
+    color: #5a2942;
+    line-height: 1.3;
+    margin-bottom: 50px;
+}
+
+.final-surprise h2 span {
+    display: block;
+    color: #e96b9a;
+}
+
+
+/* =========================
+   FINAL CONTENT
+========================= */
+
+.final-content {
+    opacity: 0;
+    transform: translateY(40px);
+    transition:
+        opacity 1.5s ease,
+        transform 1.5s ease;
+}
+
+.final-content.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =========================
+   PHOTO
+========================= */
+
+.final-photo {
+    width: 230px;
+    height: 280px;
+
+    margin: auto;
+
+    padding: 10px;
+    background: white;
+
+    box-shadow:
+        0 15px 40px rgba(120, 50, 80, 0.15);
+
+    transform: rotate(-3deg);
+}
+
+.final-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+.final-message {
+    max-width: 580px;
+    margin: 35px auto 0;
+
+    color: #654454;
+    line-height: 1.9;
+    font-size: 15px;
+}
+
+.final-divider {
+    margin: 35px 0;
+
+    font-size: 32px;
+    color: #e96b9a;
+}
+
+.final-surprise h3 {
+    font-family: "Dancing Script", cursive;
+    font-size: 42px;
+    color: #5a2942;
+    margin: 0;
+}
+
+.final-surprise h3 span {
+    color: #e96b9a;
+}
+
+.final-last {
+    margin-top: 15px;
+
+    font-family: "Dancing Script", cursive;
+    font-size: 25px;
+
+    color: #d45b89;
+}
+
+
+/* =========================
+   HEART CONFETTI
+========================= */
+
+.heart-confetti span {
+    position: absolute;
+
+    font-size: 20px;
+
+    animation:
+        heartFall 5s linear forwards;
+}
+
+@keyframes heartFall {
+
+    0% {
+        transform:
+            translateY(-100px)
+            rotate(0deg);
+
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    100% {
+        transform:
+            translateY(100vh)
+            rotate(360deg);
+
+        opacity: 0;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .final-surprise {
+        padding: 90px 20px;
+    }
+
+    .final-surprise h2 {
+        font-size: 34px;
+    }
+
+    .final-photo {
+        width: 200px;
+        height: 250px;
+    }
+
+    .final-surprise h3 {
+        font-size: 36px;
+    }
+
+    .final-message {
+        font-size: 14px;
+    }
+
+}
