@@ -255,227 +255,204 @@ button:active {
 ========================= */
 
 .cake-wrapper {
-    margin-bottom: 35px;
+  margin-bottom: 35px;
 
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-
 
 .cake {
-    position: relative;
+  position: relative;
 
-    width: 190px;
-    height: 150px;
+  width: 190px;
+  height: 150px;
 
-    animation: cakeFloat 3s ease-in-out infinite;
+  animation: cakeFloat 3s ease-in-out infinite;
 }
-
 
 /* Cake body */
 
 .cake-body {
-    position: absolute;
+  position: absolute;
 
-    bottom: 15px;
-    left: 20px;
+  bottom: 15px;
+  left: 20px;
 
-    width: 150px;
-    height: 80px;
+  width: 150px;
+  height: 80px;
 
-    background: linear-gradient(
-        to bottom,
-        #ff9fc3,
-        #f47fae
-    );
+  background: linear-gradient(to bottom, #ff9fc3, #f47fae);
 
-    border-radius: 12px 12px 20px 20px;
+  border-radius: 12px 12px 20px 20px;
 
-    box-shadow:
-        0 12px 25px rgba(214, 91, 135, 0.25);
+  box-shadow: 0 12px 25px rgba(214, 91, 135, 0.25);
 }
-
 
 /* Cake cream */
 
 .cake-top {
-    position: absolute;
+  position: absolute;
 
-    bottom: 80px;
-    left: 15px;
+  bottom: 80px;
+  left: 15px;
 
-    width: 160px;
-    height: 30px;
+  width: 160px;
+  height: 30px;
 
-    background: #fff7fa;
+  background: #fff7fa;
 
-    border-radius: 50%;
+  border-radius: 50%;
 
-    box-shadow:
-        0 5px 10px rgba(214, 91, 135, 0.12);
+  box-shadow: 0 5px 10px rgba(214, 91, 135, 0.12);
 }
-
 
 /* Cream dripping */
 
 .cake-top::after {
-    content: "";
+  content: "";
 
-    position: absolute;
+  position: absolute;
 
-    left: 25px;
-    top: 10px;
+  left: 25px;
+  top: 10px;
 
-    width: 25px;
-    height: 25px;
+  width: 25px;
+  height: 25px;
 
-    background: #fff7fa;
+  background: #fff7fa;
 
-    border-radius: 0 0 15px 15px;
+  border-radius: 0 0 15px 15px;
 }
-
 
 /* Cake hearts */
 
 .cake-body span {
-    position: relative;
+  position: relative;
 
-    display: inline-block;
+  display: inline-block;
 
-    margin: 28px 10px 0;
+  margin: 28px 10px 0;
 
-    color: #fff;
+  color: #fff;
 
-    font-size: 18px;
+  font-size: 18px;
 
-    opacity: 0.9;
+  opacity: 0.9;
 }
-
 
 /* Plate */
 
 .cake-plate {
-    position: absolute;
+  position: absolute;
 
-    bottom: 0;
-    left: 5px;
+  bottom: 0;
+  left: 5px;
 
-    width: 180px;
-    height: 15px;
+  width: 180px;
+  height: 15px;
 
-    background: #f9c5d9;
+  background: #f9c5d9;
 
-    border-radius: 50%;
+  border-radius: 50%;
 }
-
 
 /* Candle */
 
 .candle {
-    position: absolute;
+  position: absolute;
 
-    z-index: 5;
+  z-index: 5;
 
-    bottom: 108px;
-    left: 85px;
+  bottom: 108px;
+  left: 85px;
 
-    width: 20px;
-    height: 55px;
+  width: 20px;
+  height: 55px;
 
-    background:
-        repeating-linear-gradient(
-            45deg,
-            #fff,
-            #fff 7px,
-            #ff8fb8 7px,
-            #ff8fb8 14px
-        );
+  background: repeating-linear-gradient(
+    45deg,
+    #fff,
+    #fff 7px,
+    #ff8fb8 7px,
+    #ff8fb8 14px
+  );
 
-    border-radius: 5px;
+  border-radius: 5px;
 }
-
 
 /* Flame */
 
 .flame {
-    position: absolute;
+  position: absolute;
 
-    left: 3px;
-    top: -28px;
+  left: 3px;
+  top: -28px;
 
-    width: 15px;
-    height: 25px;
+  width: 15px;
+  height: 25px;
 
-    background: #ffb347;
+  background: #ffb347;
 
-    border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
 
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 
-    box-shadow:
-        0 0 15px #ffb347,
-        0 0 30px rgba(255, 179, 71, 0.5);
+  box-shadow:
+    0 0 15px #ffb347,
+    0 0 30px rgba(255, 179, 71, 0.5);
 
-    animation: flame 0.8s ease-in-out infinite alternate;
+  animation: flame 0.8s ease-in-out infinite alternate;
 }
-
 
 /* Wish message */
 
 .wish-message {
-    max-width: 450px;
+  max-width: 450px;
 
-    margin: 25px auto 0;
+  margin: 25px auto 0;
 
-    font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 
-    font-size: 22px;
+  font-size: 22px;
 
-    color: #c0527c;
+  color: #c0527c;
 
-    opacity: 0;
+  opacity: 0;
 
-    transform: translateY(15px);
+  transform: translateY(15px);
 
-    transition: 0.8s ease;
+  transition: 0.8s ease;
 }
-
 
 .wish-message.show {
-    opacity: 1;
+  opacity: 1;
 
-    transform: translateY(0);
+  transform: translateY(0);
 }
-
 
 /* =========================
    CAKE ANIMATIONS
 ========================= */
 
 @keyframes cakeFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
 
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-8px);
-    }
-
+  50% {
+    transform: translateY(-8px);
+  }
 }
 
-
 @keyframes flame {
+  from {
+    transform: rotate(42deg) scale(1);
+  }
 
-    from {
-        transform: rotate(42deg) scale(1);
-    }
-
-    to {
-        transform: rotate(48deg) scale(1.08);
-    }
-
+  to {
+    transform: rotate(48deg) scale(1.08);
+  }
 }
 
 /* =========================
@@ -483,37 +460,34 @@ button:active {
 ========================= */
 
 .opening {
-    transition:
-        opacity 0.8s ease,
-        transform 0.8s ease;
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
 }
-
 
 .opening-hide {
-    opacity: 0;
-    transform: scale(1.05);
+  opacity: 0;
+  transform: scale(1.05);
 }
-
 
 /* =========================
    BIRTHDAY ENTRANCE
 ========================= */
 
 .birthday {
-    opacity: 0;
+  opacity: 0;
 
-    transform: translateY(40px);
+  transform: translateY(40px);
 
-    transition:
-        opacity 1s ease,
-        transform 1s ease;
+  transition:
+    opacity 1s ease,
+    transform 1s ease;
 }
 
-
 .birthday.birthday-show {
-    opacity: 1;
+  opacity: 1;
 
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 /* =========================
@@ -521,127 +495,110 @@ button:active {
 ========================= */
 
 .story {
-    min-height: 100vh;
+  min-height: 100vh;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    text-align: center;
+  text-align: center;
 
-    padding: 80px 25px;
+  padding: 80px 25px;
 
-    background:
-        radial-gradient(
-            circle at 20% 20%,
-            #ffd6e7,
-            transparent 35%
-        ),
-        #fff5f8;
+  background:
+    radial-gradient(circle at 20% 20%, #ffd6e7, transparent 35%), #fff5f8;
 }
-
 
 .story-container {
-    width: 100%;
-    max-width: 700px;
+  width: 100%;
+  max-width: 700px;
 }
-
 
 .story h2 {
-    font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 
-    font-size: clamp(50px, 10vw, 80px);
+  font-size: clamp(50px, 10vw, 80px);
 
-    line-height: 1;
+  line-height: 1;
 
-    color: #7a3d59;
+  color: #7a3d59;
 
-    margin-bottom: 35px;
+  margin-bottom: 35px;
 }
-
 
 .story h2 span {
-    color: #d65b87;
+  color: #d65b87;
 }
-
 
 .story-card {
-    position: relative;
+  position: relative;
 
-    padding: 45px 35px;
+  padding: 45px 35px;
 
-    background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.75);
 
-    border-radius: 25px;
+  border-radius: 25px;
 
-    box-shadow:
-        0 20px 50px rgba(180, 80, 120, 0.12);
+  box-shadow: 0 20px 50px rgba(180, 80, 120, 0.12);
 
-    border: 1px solid rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.8);
 
-    backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 
-    margin-bottom: 35px;
+  margin-bottom: 35px;
 }
-
 
 .story-card p {
-    font-size: 15px;
+  font-size: 15px;
 
-    line-height: 1.9;
+  line-height: 1.9;
 
-    color: #795467;
+  color: #795467;
 
-    margin-bottom: 22px;
+  margin-bottom: 22px;
 }
-
 
 .story-card .story-last {
-    font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 
-    font-size: 25px;
+  font-size: 25px;
 
-    color: #c0527c;
+  color: #c0527c;
 
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
-
 
 .story-icon {
-    width: 55px;
-    height: 55px;
+  width: 55px;
+  height: 55px;
 
-    margin: -70px auto 25px;
+  margin: -70px auto 25px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    border-radius: 50%;
+  border-radius: 50%;
 
-    background: #f48fb5;
+  background: #f48fb5;
 
-    color: white;
+  color: white;
 
-    font-size: 25px;
+  font-size: 25px;
 
-    box-shadow:
-        0 10px 25px rgba(214, 91, 135, 0.25);
+  box-shadow: 0 10px 25px rgba(214, 91, 135, 0.25);
 }
-
 
 /* Mobile */
 
 @media (max-width: 600px) {
+  .story-card {
+    padding: 40px 25px;
+  }
 
-    .story-card {
-        padding: 40px 25px;
-    }
-
-    .story-card p {
-        font-size: 14px;
-    }
-
+  .story-card p {
+    font-size: 14px;
+  }
 }
 
 /* =========================
@@ -649,235 +606,207 @@ button:active {
 ========================= */
 
 .memories {
-    min-height: 100vh;
+  min-height: 100vh;
 
-    padding: 100px 25px;
+  padding: 100px 25px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    text-align: center;
+  text-align: center;
 
-    background:
-        radial-gradient(
-            circle at 80% 20%,
-            #ffd6e7,
-            transparent 35%
-        ),
-        #fff0f6;
+  background:
+    radial-gradient(circle at 80% 20%, #ffd6e7, transparent 35%), #fff0f6;
 }
-
 
 .memories-container {
-    width: 100%;
-    max-width: 1000px;
+  width: 100%;
+  max-width: 1000px;
 }
-
 
 .memories h2 {
-    font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 
-    font-size: clamp(50px, 10vw, 80px);
+  font-size: clamp(50px, 10vw, 80px);
 
-    line-height: 1;
+  line-height: 1;
 
-    color: #7a3d59;
+  color: #7a3d59;
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
-
 
 .memories h2 span {
-    color: #d65b87;
+  color: #d65b87;
 }
-
 
 .memories-intro {
-    max-width: 550px;
+  max-width: 550px;
 
-    margin: 0 auto 70px;
+  margin: 0 auto 70px;
 
-    color: #81566a;
+  color: #81566a;
 
-    font-size: 14px;
+  font-size: 14px;
 
-    line-height: 1.8;
+  line-height: 1.8;
 }
-
 
 /* =========================
    POLAROID GALLERY
 ========================= */
 
 .polaroid-gallery {
-    display: flex;
+  display: flex;
 
-    justify-content: center;
+  justify-content: center;
 
-    align-items: center;
+  align-items: center;
 
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 
-    gap: 35px;
+  gap: 35px;
 
-    margin-bottom: 70px;
+  margin-bottom: 70px;
 }
-
 
 .polaroid {
-    width: 210px;
+  width: 210px;
 
-    padding: 12px 12px 25px;
+  padding: 12px 12px 25px;
 
-    background: #fff;
+  background: #fff;
 
-    box-shadow:
-        0 15px 35px rgba(130, 50, 80, 0.15);
+  box-shadow: 0 15px 35px rgba(130, 50, 80, 0.15);
 
-    transition: 0.4s ease;
+  transition: 0.4s ease;
 
-    position: relative;
+  position: relative;
 }
-
 
 .polaroid:hover {
-    transform:
-        rotate(0deg)
-        translateY(-12px)
-        scale(1.04);
+  transform: rotate(0deg) translateY(-12px) scale(1.04);
 
-    box-shadow:
-        0 25px 45px rgba(130, 50, 80, 0.2);
+  box-shadow: 0 25px 45px rgba(130, 50, 80, 0.2);
 }
-
 
 /* Photo */
 
 .photo {
-    width: 100%;
+  width: 100%;
 
-    height: 210px;
+  height: 210px;
 
-    overflow: hidden;
+  overflow: hidden;
 
-    background: #ffdce9;
+  background: #ffdce9;
 }
-
 
 .photo img {
-    width: 100%;
+  width: 100%;
 
-    height: 100%;
+  height: 100%;
 
-    object-fit: cover;
+  object-fit: cover;
 
-    display: block;
+  display: block;
 
-    transition: 0.5s ease;
+  transition: 0.5s ease;
 }
-
 
 .polaroid:hover .photo img {
-    transform: scale(1.06);
+  transform: scale(1.06);
 }
-
 
 /* Caption */
 
 .polaroid p {
-    font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 
-    font-size: 19px;
+  font-size: 19px;
 
-    color: #81566a;
+  color: #81566a;
 
-    margin-top: 15px;
+  margin-top: 15px;
 }
-
 
 /* Different rotations */
 
 .polaroid-1 {
-    transform: rotate(-5deg);
+  transform: rotate(-5deg);
 }
 
 .polaroid-2 {
-    transform: rotate(4deg);
+  transform: rotate(4deg);
 }
 
 .polaroid-3 {
-    transform: rotate(-3deg);
+  transform: rotate(-3deg);
 }
 
 .polaroid-4 {
-    transform: rotate(6deg);
+  transform: rotate(6deg);
 }
-
 
 /* Tape decoration */
 
 .polaroid::before {
-    content: "";
+  content: "";
 
-    position: absolute;
+  position: absolute;
 
-    width: 65px;
+  width: 65px;
 
-    height: 20px;
+  height: 20px;
 
-    background: rgba(255, 190, 215, 0.65);
+  background: rgba(255, 190, 215, 0.65);
 
-    top: -10px;
+  top: -10px;
 
-    left: 50%;
+  left: 50%;
 
-    transform: translateX(-50%) rotate(-2deg);
+  transform: translateX(-50%) rotate(-2deg);
 
-    z-index: 2;
+  z-index: 2;
 }
-
 
 /* Bottom */
 
 .memory-bottom {
-    max-width: 500px;
+  max-width: 500px;
 
-    margin: auto;
+  margin: auto;
 }
-
 
 .memory-bottom p {
-    font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 
-    font-size: 23px;
+  font-size: 23px;
 
-    color: #c0527c;
+  color: #c0527c;
 
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
-
 
 /* Mobile */
 
 @media (max-width: 600px) {
+  .polaroid-gallery {
+    gap: 45px 20px;
+  }
 
-    .polaroid-gallery {
-        gap: 45px 20px;
-    }
+  .polaroid {
+    width: 165px;
+  }
 
-    .polaroid {
-        width: 165px;
-    }
+  .photo {
+    height: 165px;
+  }
 
-    .photo {
-        height: 165px;
-    }
-
-    .polaroid p {
-        font-size: 16px;
-    }
-
+  .polaroid p {
+    font-size: 16px;
+  }
 }
 
 /* =========================
@@ -885,187 +814,162 @@ button:active {
 ========================= */
 
 .things {
-    min-height: 100vh;
+  min-height: 100vh;
 
-    padding: 100px 25px;
+  padding: 100px 25px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    text-align: center;
+  text-align: center;
 
-    background:
-        radial-gradient(
-            circle at 10% 80%,
-            #ffd4e5,
-            transparent 35%
-        ),
-        #fff7fa;
+  background:
+    radial-gradient(circle at 10% 80%, #ffd4e5, transparent 35%), #fff7fa;
 }
-
 
 .things-container {
-    width: 100%;
-    max-width: 950px;
+  width: 100%;
+  max-width: 950px;
 }
-
 
 .things h2 {
-    font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 
-    font-size: clamp(50px, 10vw, 80px);
+  font-size: clamp(50px, 10vw, 80px);
 
-    line-height: 1;
+  line-height: 1;
 
-    color: #7a3d59;
+  color: #7a3d59;
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
-
 
 .things h2 span {
-    color: #d65b87;
+  color: #d65b87;
 }
-
 
 .things-intro {
-    max-width: 550px;
+  max-width: 550px;
 
-    margin: 0 auto 60px;
+  margin: 0 auto 60px;
 
-    font-size: 14px;
+  font-size: 14px;
 
-    line-height: 1.8;
+  line-height: 1.8;
 
-    color: #81566a;
+  color: #81566a;
 }
-
 
 /* =========================
    CARDS
 ========================= */
 
 .things-grid {
-    display: grid;
+  display: grid;
 
-    grid-template-columns:
-        repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 
-    gap: 25px;
+  gap: 25px;
 
-    margin-bottom: 55px;
+  margin-bottom: 55px;
 }
-
 
 .thing-card {
-    padding: 35px 30px;
+  padding: 35px 30px;
 
-    background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.8);
 
-    border-radius: 25px;
+  border-radius: 25px;
 
-    border: 1px solid rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.9);
 
-    box-shadow:
-        0 15px 40px rgba(150, 60, 100, 0.1);
+  box-shadow: 0 15px 40px rgba(150, 60, 100, 0.1);
 
-    transition: 0.4s ease;
+  transition: 0.4s ease;
 }
-
 
 .thing-card:hover {
-    transform: translateY(-8px);
+  transform: translateY(-8px);
 
-    box-shadow:
-        0 25px 50px rgba(150, 60, 100, 0.15);
+  box-shadow: 0 25px 50px rgba(150, 60, 100, 0.15);
 }
-
 
 .thing-icon {
-    width: 65px;
-    height: 65px;
+  width: 65px;
+  height: 65px;
 
-    margin: 0 auto 20px;
+  margin: 0 auto 20px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    border-radius: 50%;
+  border-radius: 50%;
 
-    background: #ffe1ed;
+  background: #ffe1ed;
 
-    font-size: 28px;
+  font-size: 28px;
 }
-
 
 .thing-card h3 {
-    font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 
-    font-size: 28px;
+  font-size: 28px;
 
-    color: #c0527c;
+  color: #c0527c;
 
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
-
 
 .thing-card p {
-    font-size: 14px;
+  font-size: 14px;
 
-    line-height: 1.8;
+  line-height: 1.8;
 
-    color: #795467;
+  color: #795467;
 }
-
 
 /* =========================
    ENDING
 ========================= */
 
 .things-ending {
-    margin-bottom: 35px;
+  margin-bottom: 35px;
 }
-
 
 .things-ending p {
-    font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 
-    font-size: 25px;
+  font-size: 25px;
 
-    color: #c0527c;
+  color: #c0527c;
 
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
-
 
 .things-ending span {
-    font-size: 14px;
+  font-size: 14px;
 
-    color: #81566a;
+  color: #81566a;
 }
-
 
 .things-ending strong {
-    color: #d65b87;
+  color: #d65b87;
 }
-
 
 /* =========================
    MOBILE
 ========================= */
 
 @media (max-width: 650px) {
+  .things-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .things-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .thing-card {
-        padding: 30px 25px;
-    }
-
+  .thing-card {
+    padding: 30px 25px;
+  }
 }
 
 /* =========================
@@ -1073,257 +977,223 @@ button:active {
 ========================= */
 
 .music {
-    min-height: 100vh;
+  min-height: 100vh;
 
-    padding: 100px 25px;
+  padding: 100px 25px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    text-align: center;
+  text-align: center;
 
-    background:
-        radial-gradient(
-            circle at 80% 80%,
-            #ffd1e3,
-            transparent 35%
-        ),
-        #fff0f6;
+  background:
+    radial-gradient(circle at 80% 80%, #ffd1e3, transparent 35%), #fff0f6;
 }
-
 
 .music-container {
-    width: 100%;
-    max-width: 700px;
+  width: 100%;
+  max-width: 700px;
 }
-
 
 .music h2 {
-    font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 
-    font-size: clamp(48px, 10vw, 75px);
+  font-size: clamp(48px, 10vw, 75px);
 
-    line-height: 1;
+  line-height: 1;
 
-    color: #7a3d59;
+  color: #7a3d59;
 
-    margin-bottom: 45px;
+  margin-bottom: 45px;
 }
-
 
 .music h2 span {
-    color: #d65b87;
+  color: #d65b87;
 }
-
 
 /* =========================
    MUSIC CARD
 ========================= */
 
 .music-card {
-    width: 100%;
+  width: 100%;
 
-    max-width: 500px;
+  max-width: 500px;
 
-    margin: auto;
+  margin: auto;
 
-    padding: 35px;
+  padding: 35px;
 
-    background: rgba(255, 255, 255, 0.82);
+  background: rgba(255, 255, 255, 0.82);
 
-    border-radius: 30px;
+  border-radius: 30px;
 
-    box-shadow:
-        0 25px 60px rgba(150, 60, 100, 0.13);
+  box-shadow: 0 25px 60px rgba(150, 60, 100, 0.13);
 
-    backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
 }
-
 
 /* Cover */
 
 .music-cover {
-    width: 170px;
-    height: 170px;
+  width: 170px;
+  height: 170px;
 
-    margin: 0 auto 25px;
+  margin: 0 auto 25px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    border-radius: 50%;
+  border-radius: 50%;
 
-    background:
-        radial-gradient(
-            circle,
-            #ffb4cf,
-            #e96c99
-        );
+  background: radial-gradient(circle, #ffb4cf, #e96c99);
 
-    font-size: 65px;
+  font-size: 65px;
 
-    box-shadow:
-        0 15px 40px rgba(214, 91, 135, 0.25);
+  box-shadow: 0 15px 40px rgba(214, 91, 135, 0.25);
 
-    transition: 0.5s ease;
+  transition: 0.5s ease;
 }
-
 
 /* Saat lagu play */
 
 .music-cover.playing {
-    animation: musicRotate 5s linear infinite;
+  animation: musicRotate 5s linear infinite;
 
-    box-shadow:
-        0 0 30px rgba(214, 91, 135, 0.4);
+  box-shadow: 0 0 30px rgba(214, 91, 135, 0.4);
 }
-
 
 /* Info */
 
 .music-label {
-    font-size: 12px;
+  font-size: 12px;
 
-    letter-spacing: 1px;
+  letter-spacing: 1px;
 
-    color: #b66b8b;
+  color: #b66b8b;
 
-    margin-bottom: 7px;
+  margin-bottom: 7px;
 }
-
 
 .music-info h3 {
-    font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 
-    font-size: 30px;
+  font-size: 30px;
 
-    color: #c0527c;
+  color: #c0527c;
 
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
-
 
 .music-artist {
-    font-size: 13px;
+  font-size: 13px;
 
-    color: #987080;
+  color: #987080;
 
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
-
 
 /* =========================
    PLAY BUTTON
 ========================= */
 
 .music-controls {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
-
 
 #playButton {
-    width: 60px;
-    height: 60px;
+  width: 60px;
+  height: 60px;
 
-    padding: 0;
+  padding: 0;
 
-    border-radius: 50%;
+  border-radius: 50%;
 
-    font-size: 20px;
+  font-size: 20px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 /* =========================
    PROGRESS
 ========================= */
 
 .progress-area {
-    display: flex;
+  display: flex;
 
-    align-items: center;
+  align-items: center;
 
-    gap: 10px;
+  gap: 10px;
 }
-
 
 .progress-area span {
-    font-size: 11px;
+  font-size: 11px;
 
-    color: #987080;
+  color: #987080;
 
-    min-width: 30px;
+  min-width: 30px;
 }
-
 
 #progressBar {
-    flex: 1;
+  flex: 1;
 
-    height: 5px;
+  height: 5px;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    accent-color: #d65b87;
+  accent-color: #d65b87;
 }
-
 
 /* Note */
 
 .music-note {
-    font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 
-    font-size: 22px;
+  font-size: 22px;
 
-    color: #c0527c;
+  color: #c0527c;
 
-    margin: 35px auto;
+  margin: 35px auto;
 
-    max-width: 450px;
+  max-width: 450px;
 
-    line-height: 1.5;
+  line-height: 1.5;
 }
-
 
 /* =========================
    ANIMATION
 ========================= */
 
 @keyframes musicRotate {
+  from {
+    transform: rotate(0deg);
+  }
 
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-
+  to {
+    transform: rotate(360deg);
+  }
 }
-
 
 /* Mobile */
 
 @media (max-width: 600px) {
+  .music-card {
+    padding: 25px 20px;
+  }
 
-    .music-card {
-        padding: 25px 20px;
-    }
+  .music-cover {
+    width: 145px;
+    height: 145px;
 
-    .music-cover {
-        width: 145px;
-        height: 145px;
-
-        font-size: 55px;
-    }
-
+    font-size: 55px;
+  }
 }
 
 /* =========================
@@ -1331,279 +1201,264 @@ button:active {
 ========================= */
 
 .letter {
-    min-height: 100vh;
-    padding: 120px 20px;
-    background: linear-gradient(
-        180deg,
-        #fff0f6,
-        #ffe4ef
-    );
-    text-align: center;
+  min-height: 100vh;
+  padding: 120px 20px;
+  background: linear-gradient(180deg, #fff0f6, #ffe4ef);
+  text-align: center;
 }
 
 .letter-container {
-    max-width: 800px;
-    margin: auto;
+  max-width: 800px;
+  margin: auto;
 }
 
 .letter h2 {
-    font-size: 48px;
-    margin: 15px 0;
-    color: #5a2942;
+  font-size: 48px;
+  margin: 15px 0;
+  color: #5a2942;
 }
 
 .letter h2 span {
-    display: block;
-    color: #e96b9a;
+  display: block;
+  color: #e96b9a;
 }
 
 .letter-intro {
-    color: #8b6475;
-    margin-bottom: 50px;
+  color: #8b6475;
+  margin-bottom: 50px;
 }
-
 
 /* =========================
    ENVELOPE
 ========================= */
 
 .envelope-wrapper {
-    cursor: pointer;
-    display: inline-block;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .envelope {
-    position: relative;
-    width: 260px;
-    height: 180px;
-    margin: auto;
-    transition: transform 0.4s ease;
+  position: relative;
+  width: 260px;
+  height: 180px;
+  margin: auto;
+  transition: transform 0.4s ease;
 }
 
 .envelope-wrapper:hover .envelope {
-    transform: translateY(-8px);
+  transform: translateY(-8px);
 }
-
 
 /* badan amplop */
 
 .envelope-body {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #f8a8c4;
-    border-radius: 8px;
-    box-shadow: 0 15px 30px rgba(150, 70, 100, 0.15);
-    overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #f8a8c4;
+  border-radius: 8px;
+  box-shadow: 0 15px 30px rgba(150, 70, 100, 0.15);
+  overflow: hidden;
 }
 
 .envelope-body::before,
 .envelope-body::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-style: solid;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
 }
 
 .envelope-body::before {
-    left: 0;
-    border-width: 90px 130px 0 0;
-    border-color: #ef8fb2 transparent transparent transparent;
+  left: 0;
+  border-width: 90px 130px 0 0;
+  border-color: #ef8fb2 transparent transparent transparent;
 }
 
 .envelope-body::after {
-    right: 0;
-    border-width: 0 130px 90px 0;
-    border-color: transparent #ef8fb2 transparent transparent;
+  right: 0;
+  border-width: 0 130px 90px 0;
+  border-color: transparent #ef8fb2 transparent transparent;
 }
 
 .envelope-body span {
-    position: absolute;
-    z-index: 3;
-    top: 70px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 32px;
+  position: absolute;
+  z-index: 3;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 32px;
 }
-
 
 /* tutup amplop */
 
 .envelope-flap {
-    position: absolute;
-    z-index: 5;
-    top: 0;
-    left: 0;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
 
-    width: 0;
-    height: 0;
+  width: 0;
+  height: 0;
 
-    border-left: 130px solid transparent;
-    border-right: 130px solid transparent;
-    border-top: 95px solid #f7b1ca;
+  border-left: 130px solid transparent;
+  border-right: 130px solid transparent;
+  border-top: 95px solid #f7b1ca;
 
-    transform-origin: top;
-    transition: transform 0.8s ease;
+  transform-origin: top;
+  transition: transform 0.8s ease;
 }
-
 
 /* teks */
 
 .envelope-text {
-    margin-top: 25px;
-    color: #d45b89;
-    font-weight: 500;
+  margin-top: 25px;
+  color: #d45b89;
+  font-weight: 500;
 }
-
 
 /* =========================
    OPEN ANIMATION
 ========================= */
 
 .envelope-wrapper.open .envelope-flap {
-    transform: rotateX(180deg);
+  transform: rotateX(180deg);
 }
 
 .envelope-wrapper.open {
-    pointer-events: none;
+  pointer-events: none;
 }
-
 
 /* =========================
    LETTER PAPER
 ========================= */
 
 .letter-paper {
-    display: none;
+  display: none;
 
-    max-width: 650px;
-    margin: 60px auto 0;
-    padding: 50px 45px;
+  max-width: 650px;
+  margin: 60px auto 0;
+  padding: 50px 45px;
 
-    background: #fffafc;
-    border-radius: 10px;
+  background: #fffafc;
+  border-radius: 10px;
 
-    box-shadow:
-        0 20px 50px rgba(120, 50, 80, 0.12);
+  box-shadow: 0 20px 50px rgba(120, 50, 80, 0.12);
 
-    text-align: left;
+  text-align: left;
 
-    opacity: 0;
-    transform: translateY(30px);
+  opacity: 0;
+  transform: translateY(30px);
 
-    transition:
-        opacity 1s ease,
-        transform 1s ease;
+  transition:
+    opacity 1s ease,
+    transform 1s ease;
 }
 
 .letter-paper.show {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .letter-heart {
-    text-align: center;
-    font-size: 35px;
-    color: #e96b9a;
-    margin-bottom: 25px;
+  text-align: center;
+  font-size: 35px;
+  color: #e96b9a;
+  margin-bottom: 25px;
 }
 
 .letter-paper p {
-    color: #654454;
-    line-height: 1.9;
-    margin-bottom: 22px;
+  color: #654454;
+  line-height: 1.9;
+  margin-bottom: 22px;
 }
 
 .letter-greeting {
-    font-family: "Dancing Script", cursive;
-    font-size: 28px;
-    color: #d85b8b !important;
+  font-family: "Dancing Script", cursive;
+  font-size: 28px;
+  color: #d85b8b !important;
 }
 
 .letter-special {
-    text-align: center;
-    font-family: "Dancing Script", cursive;
-    font-size: 26px;
-    color: #d85b8b !important;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 26px;
+  color: #d85b8b !important;
 }
 
 .letter-ending {
-    text-align: center;
-    font-family: "Dancing Script", cursive;
-    font-size: 30px;
-    color: #d85b8b !important;
-    margin-top: 35px;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+  color: #d85b8b !important;
+  margin-top: 35px;
 }
-
 
 /* =========================
    FINAL BUTTON
 ========================= */
 
 #finalButton {
-    display: block;
-    margin: 35px auto 0;
+  display: block;
+  margin: 35px auto 0;
 
-    padding: 13px 25px;
+  padding: 13px 25px;
 
-    border: none;
-    border-radius: 30px;
+  border: none;
+  border-radius: 30px;
 
-    background: #e96b9a;
-    color: white;
+  background: #e96b9a;
+  color: white;
 
-    font-family: "Poppins", sans-serif;
-    font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 #finalButton:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(220, 90, 140, 0.25);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(220, 90, 140, 0.25);
 }
-
 
 /* =========================
    MOBILE
 ========================= */
 
 @media (max-width: 600px) {
+  .letter {
+    padding: 90px 18px;
+  }
 
-    .letter {
-        padding: 90px 18px;
-    }
+  .letter h2 {
+    font-size: 38px;
+  }
 
-    .letter h2 {
-        font-size: 38px;
-    }
+  .envelope {
+    width: 230px;
+    height: 160px;
+  }
 
-    .envelope {
-        width: 230px;
-        height: 160px;
-    }
+  .envelope-flap {
+    border-left-width: 115px;
+    border-right-width: 115px;
+    border-top-width: 85px;
+  }
 
-    .envelope-flap {
-        border-left-width: 115px;
-        border-right-width: 115px;
-        border-top-width: 85px;
-    }
+  .letter-paper {
+    padding: 35px 25px;
+  }
 
-    .letter-paper {
-        padding: 35px 25px;
-    }
-
-    .letter-paper p {
-        font-size: 14px;
-    }
-
+  .letter-paper p {
+    font-size: 14px;
+  }
 }
 
 /* =========================
@@ -1611,196 +1466,303 @@ button:active {
 ========================= */
 
 .final-surprise {
-    min-height: 100vh;
-    padding: 120px 20px;
-    background: #fff8fb;
+  min-height: 100vh;
+  padding: 120px 20px;
+  background: #fff8fb;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    text-align: center;
+  text-align: center;
 
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .final-container {
-    max-width: 700px;
-    width: 100%;
-    position: relative;
-    z-index: 2;
+  max-width: 700px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .final-small {
-    color: #c56b8e;
-    font-size: 14px;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
+  color: #c56b8e;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
 }
 
 .final-surprise h2 {
-    font-size: 44px;
-    color: #5a2942;
-    line-height: 1.3;
-    margin-bottom: 50px;
+  font-size: 44px;
+  color: #5a2942;
+  line-height: 1.3;
+  margin-bottom: 50px;
 }
 
 .final-surprise h2 span {
-    display: block;
-    color: #e96b9a;
+  display: block;
+  color: #e96b9a;
 }
-
 
 /* =========================
    FINAL CONTENT
 ========================= */
 
 .final-content {
-    opacity: 0;
-    transform: translateY(40px);
-    transition:
-        opacity 1.5s ease,
-        transform 1.5s ease;
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 1.5s ease,
+    transform 1.5s ease;
 }
 
 .final-content.show {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
-
 
 /* =========================
    PHOTO
 ========================= */
 
 .final-photo {
-    width: 230px;
-    height: 280px;
+  width: 230px;
+  height: 280px;
 
-    margin: auto;
+  margin: auto;
 
-    padding: 10px;
-    background: white;
+  padding: 10px;
+  background: white;
 
-    box-shadow:
-        0 15px 40px rgba(120, 50, 80, 0.15);
+  box-shadow: 0 15px 40px rgba(120, 50, 80, 0.15);
 
-    transform: rotate(-3deg);
+  transform: rotate(-3deg);
 }
 
 .final-photo img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    object-fit: cover;
+  object-fit: cover;
 }
-
 
 /* =========================
    MESSAGE
 ========================= */
 
 .final-message {
-    max-width: 580px;
-    margin: 35px auto 0;
+  max-width: 580px;
+  margin: 35px auto 0;
 
-    color: #654454;
-    line-height: 1.9;
-    font-size: 15px;
+  color: #654454;
+  line-height: 1.9;
+  font-size: 15px;
 }
 
 .final-divider {
-    margin: 35px 0;
+  margin: 35px 0;
 
-    font-size: 32px;
-    color: #e96b9a;
+  font-size: 32px;
+  color: #e96b9a;
 }
 
 .final-surprise h3 {
-    font-family: "Dancing Script", cursive;
-    font-size: 42px;
-    color: #5a2942;
-    margin: 0;
+  font-family: "Dancing Script", cursive;
+  font-size: 42px;
+  color: #5a2942;
+  margin: 0;
 }
 
 .final-surprise h3 span {
-    color: #e96b9a;
+  color: #e96b9a;
 }
 
 .final-last {
-    margin-top: 15px;
+  margin-top: 15px;
 
-    font-family: "Dancing Script", cursive;
-    font-size: 25px;
+  font-family: "Dancing Script", cursive;
+  font-size: 25px;
 
-    color: #d45b89;
+  color: #d45b89;
 }
-
 
 /* =========================
    HEART CONFETTI
 ========================= */
 
 .heart-confetti span {
-    position: absolute;
+  position: absolute;
 
-    font-size: 20px;
+  font-size: 20px;
 
-    animation:
-        heartFall 5s linear forwards;
+  animation: heartFall 5s linear forwards;
 }
 
 @keyframes heartFall {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
 
-    0% {
-        transform:
-            translateY(-100px)
-            rotate(0deg);
+    opacity: 0;
+  }
 
-        opacity: 0;
-    }
+  15% {
+    opacity: 1;
+  }
 
-    15% {
-        opacity: 1;
-    }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
 
-    100% {
-        transform:
-            translateY(100vh)
-            rotate(360deg);
-
-        opacity: 0;
-    }
-
+    opacity: 0;
+  }
 }
-
 
 /* =========================
    MOBILE
 ========================= */
 
 @media (max-width: 600px) {
+  .final-surprise {
+    padding: 90px 20px;
+  }
 
-    .final-surprise {
-        padding: 90px 20px;
-    }
+  .final-surprise h2 {
+    font-size: 34px;
+  }
 
-    .final-surprise h2 {
-        font-size: 34px;
-    }
+  .final-photo {
+    width: 200px;
+    height: 250px;
+  }
 
-    .final-photo {
-        width: 200px;
-        height: 250px;
-    }
+  .final-surprise h3 {
+    font-size: 36px;
+  }
 
-    .final-surprise h3 {
-        font-size: 36px;
-    }
+  .final-message {
+    font-size: 14px;
+  }
+}
 
-    .final-message {
-        font-size: 14px;
-    }
+/* =========================
+NAME SCREEN
+========================= */
 
+.name-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #fff5f8, #ffe4ec);
+
+  transition:
+    opacity 0.8s ease,
+    visibility 0.8s ease;
+}
+
+.name-screen.hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.name-container {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.name-small {
+  font-size: 15px;
+  color: #b47a8c;
+  margin-bottom: 15px;
+}
+
+.name-container h1 {
+  font-size: 42px;
+  color: #7d4055;
+  margin-bottom: 15px;
+}
+
+.name-subtitle {
+  max-width: 400px;
+  margin: 0 auto 30px;
+  color: #8d6875;
+  line-height: 1.7;
+}
+
+#nameInput {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 15px 20px;
+
+  border: 2px solid #f0c4d2;
+  border-radius: 30px;
+
+  outline: none;
+
+  background: rgba(255, 255, 255, 0.8);
+
+  text-align: center;
+  font-size: 16px;
+
+  color: #6f3c4f;
+
+  transition: 0.3s ease;
+}
+
+#nameInput:focus {
+  border-color: #d98da7;
+  box-shadow: 0 0 20px rgba(217, 141, 167, 0.15);
+}
+
+#nameButton {
+  margin-top: 18px;
+
+  padding: 13px 28px;
+
+  border: none;
+  border-radius: 30px;
+
+  background: #d98da7;
+  color: white;
+
+  font-size: 15px;
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+#nameButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(217, 141, 167, 0.25);
+}
+
+.name-error {
+  min-height: 20px;
+  margin-top: 15px;
+
+  color: #c96d87;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .name-container h1 {
+    font-size: 32px;
+  }
+
+  .name-subtitle {
+    font-size: 14px;
+    padding: 0 15px;
+  }
+
+  #nameInput {
+    font-size: 15px;
+  }
 }
